@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Категория {{ category }} — Blogicum{% endblock %}
+
+{% block content %}
+<h1>Публикации в категории - {{ category }}</h1>
+
+<p><a href="{% url 'blog:index' %}">← Вернуться к списку публикаций</a></p>
+{% endblock %}
